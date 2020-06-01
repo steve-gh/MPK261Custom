@@ -73,6 +73,65 @@ On the Mac, Ableton writes logs to:
 
 Python errors & other issues will be reported there.
 
+## MPK261 Mappings
+
+For reference, here are the MPK261 MIDI button / CC mappings used in the MPK261 preset "LiveLite" and is what this is based on.
+
+|Description                    |Label on keyboard        |MIDI CC|Comments                                                                                                                          |
+|:-----------------------------:|:-----------------------:|:-----:|:--------------------------------------------------------------------------------------------------------------------------------:|
+|            Slider             |           F1            |  12   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F2            |  13   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F3            |  14   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F4            |  15   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F5            |  16   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F6            |  17   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F7            |  18   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Slider             |           F8            |  19   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K1            |  22   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K2            |  23   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K3            |  24   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K4            |  25   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K5            |  26   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K6            |  27   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K7            |  28   |                                            values 0-127, "channel" is "control bank"                                             |
+|             Knob              |           K8            |  29   |                                            values 0-127, "channel" is "control bank"                                             |
+|            Button             |           S1            |  32   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S2            |  33   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S3            |  34   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S4            |  35   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S5            |  36   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S6            |  37   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S7            |  38   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |           S8            |  39   |                                value 127 when pressed, 0 when released, channel is "control bank"                                |
+|            Button             |         Rewind          |  115  |                                                127 when pressed, channel always 1                                                |
+|            Button             |       FastForward       |  116  |                                                127 when pressed, channel always 1                                                |
+|            Button             |          Stop           |  117  |                  127 when pressed, channel always 1. When pressed repeatedly sends a "note off" for all notes.                   |
+|            Button             |          Play           |  118  |                                                127 when pressed, channel always 1                                                |
+|            Button             |         Record          |  119  |                                                127 when pressed, channel always 1                                                |
+|            Button             |          Loop           |  114  |                                                127 when pressed, channel always 1                                                |
+|           Keyboard            |          Keys           |       |                     Top 2 notes (B & C on physical keyboard, regardless of which octave) - always Channel 2                      |
+|           Keyboard            |          Keys           |       |                                C-2 (lowest) to C8 (highest). Channel 1 (except for top two notes)                                |
+|              Pad              |          Pad 1          |  60   |Bank A -> Channel 2; Bank B->Channel 3; Bank C -> Channel4; Bank D -> Channel5.  Keyboard always Channel 1. Octave doesn't change.|
+|              Pad              |          Pad 2          |  62   |                                                                                                                                  |
+|              Pad              |          Pad 3          |  64   |                                                                                                                                  |
+|              Pad              |          Pad 4          |  64   |                                                                                                                                  |
+|              Pad              |   Pad 5 (2nd row up)    |  67   |                                                                                                                                  |
+|              Pad              |          Pad 6          |  69   |                                                                                                                                  |
+|              Pad              |          Pad 7          |  71   |                                                                                                                                  |
+|              Pad              |          Pad 8          |  72   |                                                                                                                                  |
+|              Pad              |   Pad 9 (3rd row up)    |  74   |                                                                                                                                  |
+|              Pad              |         Pad 10          |  76   |                                                                                                                                  |
+|              Pad              |         Pad 11          |  77   |                                                                                                                                  |
+|              Pad              |         Pad 12          |  79   |                                                                                                                                  |
+|              Pad              |Pad 13 (4th row up, left)|  81   |                                                                                                                                  |
+|              Pad              |         Pad 14          |  83   |                                                                                                                                  |
+|              Pad              |         Pad 15          |  84   |                                                                                                                                  |
+|              Pad              |         Pad 16          |  86   |                                                                                                                                  |
+|          Pitch Wheel          |                         |       |                                    From -8192 to 8192. Sends on both Channel 1 and Channel 2.                                    |
+|Modulator (next to pitch wheel)|                         |   1   |                                               From 0 to 127 (middle is approx 63))                                               |
+|         Sustain Pedal         |                         |  64   |                                                127 when pressed, 0 when released                                                 |
+
+
 ## Author
 
 Steve Padgett / ableton@wreck.net
